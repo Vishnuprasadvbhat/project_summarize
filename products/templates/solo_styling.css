@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+    color: #0073b1;
+}
+
+header {
+    background-color: #131a22;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo img {
+    height: 40px;
+}
+
+.search-bar {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.search-bar input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #febd69;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #f3a847;
+}
+
+.cart a {
+    color: #fff;
+    background-color: #f08804;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.cart a:hover {
+    background-color: #ddb347;
+}
+
+/* Product Page Styles */
+.product-page {
+    display: flex;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.product-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-details {
+    margin-left: 20px;
+    flex: 1;
+}
+
+.product-details h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.product-details .price {
+    font-size: 24px;
+    color: #b12704;
+    margin-bottom: 20px;
+}
+
+.product-details .description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.product-details button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.buy-now {
+    background-color: #ff9900;
+    color: #fff;
+}
+
+.buy-now:hover {
+    background-color: #e68a00;
+}
+
+.add-to-cart {
+    background-color: #f08804;
+    color: #fff;
+}
+
+.add-to-cart:hover {
+    background-color: #ddb347;
+}
+
+/* Product Information */
+.product-info {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.product-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.product-info ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #131a22;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+}

@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+    {% load static %}
+<link rel="stylesheet" href="{% static 'D:\amazon-project\products\templates\solo_styling.css' %}">
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone - Product Page</title>
+<!--    <link rel="stylesheet" href="styles.css">-->
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="#"><img src="amazon-logo.png" alt="Amazon Clone"></a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products">
+            <button type="submit">Search</button>
+        </div>
+        <div class="cart">
+            <a href="#">Cart (0)</a>
+        </div>
+    </header>
+
+    <!-- Product Section -->
+    <div class="product-page">
+        <div class="product-image">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.Z_SC2yw4z5f_vZy0GtGZngAAAA&pid=Api&P=0&h=180" alt="Product Name">
+        </div>
+        <div class="product-details">
+            <h1>Product Name</h1>
+            <p class="price">$199.99</p>
+            <p class="description">
+                This is a brief description of the product. It highlights key features and specifications to entice the customer to make a purchase.
+            </p>
+            <button class="buy-now">Buy Now</button>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Product Information -->
+    <div class="product-info">
+        <h2>Product Information</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel felis eu metus dapibus aliquam. Sed non ipsum eu purus egestas bibendum.
+        </p>
+        <ul>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+            <li>Feature 4</li>
+        </ul>
+    </div>
+
+    <!-- Review Section -->
+    <div class="review-section">
+        <h2>Customer Reviews</h2>
+
+        <!-- Existing Reviews -->
+        <div class="review">
+            <h3>John Doe</h3>
+            <p>⭐⭐⭐⭐☆</p>
+            <p>Great product! Really satisfied with the quality and delivery speed. Would recommend to others.</p>
+        </div>
+        <div class="review">
+            <h3>Jane Smith</h3>
+            <p>⭐⭐⭐☆☆</p>
+            <p>The product is okay, but I had some issues with the packaging. Customer service was helpful, though.</p>
+        </div>
+
+        <!-- Add a Review -->
+        <div class="add-review">
+            <h3>Add Your Review</h3>
+            <form action="#" method="post">
+                <label for="review-text">Your Review:</label>
+                <textarea id="review-text" name="review-text" rows="4" placeholder="Write your review here..."></textarea>
+                <button type="submit" class="submit-review">Submit Review</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Amazon Clone. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+{% endblock %}

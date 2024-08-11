@@ -14,9 +14,13 @@ def productsname(request):
     allproducts = products.objects.all().values()
     template = loader.get_template('products_page.html')
     context = {
-        'allproducts' : allproducts
+        'allproducts': allproducts
     }
 
     return HttpResponse(template.render(context, request))
+
+def solo_products(request):
+    template = loader.get_template('solo.html')
+    return HttpResponse(template.render())
 
 

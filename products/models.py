@@ -9,6 +9,8 @@ class products(models.Model):
     email = models.EmailField(max_length=100)
     phone = models.IntegerField(null=True)
 
+class solo(models.Model):
+    reviews = models.CharField(max_length=10000)
 
 
 
